@@ -1,7 +1,9 @@
 <html>
 
 <body>
-	<audio src="love.mp3" autoplay="autoplay" loop=""></audio>
+	<audio autoplay="autopaly" loop="loop" id="audio">
+		<source src="love.mp3" type="audio/mp3" />
+	</audio>
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -28,6 +30,14 @@
 		<script type="text/javascript" src="./jscss/time.js"></script>
 		<!-- 设置文字跟随鼠标 -->
 		<script type="text/javascript" src="./jscss/makesnake.js"></script>
+		<script>
+			document.addEventListener('touchstart', function () {
+				document.getElementById('audio').play()
+			})
+			document.addEventListener('mousemove', function () {
+				document.getElementById('audio').play()
+			})
+		</script>
 	</head>
 
 	<body>

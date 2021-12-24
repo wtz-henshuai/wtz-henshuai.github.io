@@ -74,7 +74,9 @@ body {
 #time{
 	position:absolute;
 	left:750px;
-	top:400px;
+	top: 500px;
+	width: 600px;
+	line-height: 2;
 	overflow:hidden;
 }
 
